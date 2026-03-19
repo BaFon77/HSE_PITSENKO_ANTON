@@ -1,0 +1,12 @@
+@"
+recordcount=500000
+operationcount=1000000
+workload=site.ycsb.workloads.CoreWorkload
+mongodb.url=mongodb://localhost:27017
+mongodb.database=university_db
+readproportion=0.5
+updateproportion=0.2
+insertproportion=0.2
+scanproportion=0.1
+requestdistribution=zipfian
+"@ | Out-File -Encoding ASCII workload.dat
